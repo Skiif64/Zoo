@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Zoo.Animals.ConcreteAnimals
 {
-    public class Cat : GroundAnimal
+    public class Cat : Animal, IWalkingAnimal
     {
         public Cat(string name) : base(name)
         {
@@ -12,7 +10,12 @@ namespace Zoo.Animals.ConcreteAnimals
 
         public override void Voice()
         {
-            Console.WriteLine("Мяу...");
+            Console.WriteLine($"{Name} говорит: Мяу...");
+        }
+
+        public void Walk()
+        {
+            Console.WriteLine("Тыгдык");
         }
     }
 }

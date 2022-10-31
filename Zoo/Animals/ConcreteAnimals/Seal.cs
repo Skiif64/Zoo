@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Zoo.Animals.ConcreteAnimals
 {
-    public class Penguin : Animal, ISwimmingAnimal, IWalkingAnimal
+    public class Seal : Animal, IWalkingAnimal, ISwimmingAnimal
     {
-        public Penguin(string name) : base(name)
+        public Seal(string name) : base(name)
         {
         }
 
@@ -17,12 +15,12 @@ namespace Zoo.Animals.ConcreteAnimals
 
         public override void Voice()
         {
-            Console.WriteLine($"{Name} крякает?");
+            Console.WriteLine($"{Name} издает звуки");
         }
 
         public void Walk()
         {
-            Console.WriteLine($"{Name} идет");
+            Console.WriteLine($"{Name} идет?");
         }
     }
 }
