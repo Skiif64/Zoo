@@ -6,7 +6,7 @@ namespace Zoo.Animals.ConcreteAnimals
 {
     public class Penguin : Animal, ISwimmingAnimal, IWalkingAnimal
     {
-        public Penguin(string name) : base(name)
+        public Penguin(string name) : base(name, "Пингвин")
         {
         }
 

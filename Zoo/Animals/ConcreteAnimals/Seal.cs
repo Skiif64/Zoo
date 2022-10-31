@@ -4,7 +4,7 @@ namespace Zoo.Animals.ConcreteAnimals
 {
     public class Seal : Animal, IWalkingAnimal, ISwimmingAnimal
     {
-        public Seal(string name) : base(name)
+        public Seal(string name) : base(name, "Тюлень")
         {
         }
 
