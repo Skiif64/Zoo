@@ -28,6 +28,7 @@ namespace Zoo.Employees
                 animal.Voice();
                 Thread.Sleep(2000);
             }
+            Console.WriteLine($"{Name} охуел, жидко пернул и умер.");
         }
     }
 }

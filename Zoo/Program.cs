@@ -9,8 +9,8 @@ namespace Zoo
     {
         static void Main(string[] args)
         {
-            var animals = new Animal[] { new Cat("Барсик"), new Seal("Нерпа"), new Penguin("Кузя") };
-            var employee = new Employee("Якут", animals);
+            var animals = new Animal[] { new Cat("КиевСтонер"), new Seal("Чипинкос"), new Penguin("Дядя J.I") };
+            var employee = new Employee("Баста", animals);
             employee.ServeAnimals();
 
             Console.Read();
