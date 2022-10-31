@@ -1,4 +1,7 @@
 ﻿using System;
+using Zoo.Animals;
+using Zoo.Animals.ConcreteAnimals;
+using Zoo.Employees;
 
 namespace Zoo
 {
@@ -6,7 +9,11 @@ namespace Zoo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var animals = new Animal[] { new Cat("Барсик"), new Seal("Нерпа"), new Penguin("Кузя") };
+            var employee = new Employee("Якут", animals);
+            employee.ServeAnimals();
+
+            Console.Read();
         }
     }
 }
