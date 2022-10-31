@@ -12,5 +12,10 @@ namespace Zoo.Animals
             Name = name;
         }
         public abstract void Voice();
+
+        public override string ToString()
+        {
+            return $"{Name}, {GetType()}";
+        }
     }
 }
