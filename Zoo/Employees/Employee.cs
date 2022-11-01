@@ -10,7 +10,8 @@ namespace Zoo.Employees
 {
     public class Employee
     {
-        private readonly IEnumerable<Animal> _animals;
+        private readonly IEnumerable<Animal> _animals; 
+
         public string Name { get; set; }
 
         public Employee(string name, IEnumerable<Animal> animals)
@@ -19,11 +20,11 @@ namespace Zoo.Employees
             Name = name;
         }
 
-        public void ServeAnimals()
+        public void FeedAnimals()
         {            
             foreach(var animal in _animals)
             {
-                Console.WriteLine($"Сотрудник {Name} зашел в вольер к {animal}");
+                Console.WriteLine($"Сотрудник {Name} покормил {animal}");
                 Thread.Sleep(1000);
                 animal.Voice();
                 Thread.Sleep(2000);
